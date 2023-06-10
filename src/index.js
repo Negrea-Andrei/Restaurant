@@ -1,1 +1,1 @@
-console.log("Wo   rk")
+console.log("Work")
