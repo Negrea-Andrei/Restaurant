@@ -7,7 +7,7 @@ body {
 
 @font-face {
     font-family: Dancing-Font;
-    src: url(./DancingScript-Bold.ttf);
+    src: url(./Shrikhand-Regular.ttf);
 }
 
 body {
@@ -19,7 +19,6 @@ body {
 
 header {
     width: 100%;
-    height: 5%;
     background-color: #93c5fd;
     position: sticky;
     top: 0;
@@ -54,7 +53,7 @@ a:hover {
 .background {
     width: 100%;
     height: 100%;
-    background-image: url(./intro-1647440546.jpg);
+    background-image: url(./intro-1647440546.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -86,7 +85,7 @@ a:hover {
     font-size: clamp(2rem, 4vw, 3rem);
     color: black;
     text-shadow: 0px 0px 10px #3b82f6;
-    background-color: #e0f2fe;
+    background-color: #8be2fd8f;
     width: 100%;
     height: 80px;
 }
