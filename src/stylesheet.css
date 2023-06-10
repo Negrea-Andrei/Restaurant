@@ -2,25 +2,30 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+}
+
+@font-face {
+    font-family: Dancing-Font;
+    src: url(./DancingScript-Bold.ttf);
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ecfeff;
 }
 
 header {
     width: 100%;
     height: 5%;
     background-color: #93c5fd;
-
+    position: sticky;
+    top: 0;
 }
 
 nav {
-    height: 100%;
+    height: 50px;
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
@@ -36,10 +41,28 @@ a {
     text-decoration: none;
     background-color: #3b82f6;
     color: #dbeafe;
-    font-size: x-large;
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 a:hover {
     box-shadow: inset 0px 5px 15px #1e40af;
     color: #bfdbfe;
+}
+
+.content {
+    width: 100%;
+    height: 100%;    
+}
+
+.restaurant-name {
+    font-family: Dancing-Font,'Times New Roman', Times, serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: black;
+    text-shadow: 0px 0px 10px #3b82f6;
+    background-color: #e0f2fe;
+    width: 100%;
+    height: 80px;
 }
