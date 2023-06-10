@@ -15,7 +15,7 @@ body {
 header {
     width: 100%;
     height: 5%;
-    background-color: rgb(134, 98, 32);
+    background-color: #93c5fd;
 
 }
 
@@ -24,7 +24,7 @@ nav {
     display: flex;
     padding-left: 20%;
     padding-right: 20%;
-    justify-content: space-between;
+    justify-content: space-evenly ;
 }
 
 a {
@@ -34,6 +34,12 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: rgb(252, 213, 86);
+    background-color: #3b82f6;
+    color: #dbeafe;
     font-size: x-large;
+}
+
+a:hover {
+    box-shadow: inset 0px 5px 15px #1e40af;
+    color: #bfdbfe;
 }
