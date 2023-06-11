@@ -42,40 +42,21 @@ a {
     background-color: #3b82f6;
     color: #dbeafe;
     font-size: clamp(1rem, 1.5vw, 2rem);
-    border: solid 1px navy;
+    border: solid 1px navy;    
+    border-radius: 10px;
 }
 
 a:hover {
     box-shadow: inset 0px 5px 15px #1e40af;
     color: #bfdbfe;
-    border-radius: 10px;
 }
 
-.background {
-    width: 100%;
+.about-restaurant{
     height: 100%;
-    background-image: url(./intro-1647440546.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 40%;
-    width: 50%;
-    color: #f3f3f3;
-    background-color: #2dadd486;
-    text-shadow: 0px 1px 3px black;
-    font-size: clamp(1rem, 6vw, 4rem);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows:repeat(2 ,1fr) ;
 }
 
 .restaurant-name {
@@ -89,4 +70,21 @@ a:hover {
     background-color: #8be2fd8f;
     width: 100%;
     height: 80px;
+}
+
+.image1, .image2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./Restaurant.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2 {
+    background-image: url(./intro-1647440546.jpeg);
 }
