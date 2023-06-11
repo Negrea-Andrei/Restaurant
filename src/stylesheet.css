@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 @font-face {
@@ -74,77 +75,37 @@ footer {
     height: 80px;
 }
 
+.contact {
+    padding: 25px 0px 25px 0px;
+    height: 100%;
+    width: 75%;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 25px;
+}
 
-.main-course, .dessert, .drinks {    
-    height: 85vh;
-    width: 75%;
-    border-radius: 7px;
-    background-position: center;
-    background-repeat: repeat;
+.picture {
+    background-image: url(./chef.jpg);
     background-size: cover;
-    margin-bottom: 7px;
-    margin-top: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
-.dessert, .drinks {
-    height: 95vh;
-    width: 75%;
-}
-
-.main-course {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    padding: 15px;
-    background-image: url(./main-course.jpg);
-}
-
-.drinks {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    padding: 15px;
-    background-image: url(./drinks.jpeg);
-}
-
-.dessert {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 15px;
-    padding: 15px;
-    background-image: url(./desserts.jpg);
-}
-
-.item {
-    backdrop-filter: blur(10px) saturate(75%);
-    border: 3px solid rgb(0, 0, 0);
-    padding-top: 15px;
+.info {
+    border: #1e40af solid 3px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: #15a9ff;
-    font-size: clamp(1rem, 3vw, 2rem);
-    font-weight: 600;
 }
 
-.item > .name {
-    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.685);
-    background-color: #00000091;
+.info > p {
+    font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-.item > .recepie {
-    color: #232ec4e1;
-    background-color: #dbeafe60;
-    text-shadow: 0px 0px 1px rgb(0, 0, 0);
-    font-size: x-large;    
-}
-
-.item > .price {
-    color: rgb(211, 190, 0);
-    font-size: 2rem;
-    border: 1px solid yellow;
+.info >h1 {
+    font-size: clamp(1rem, 4vw, 3rem);
 }
