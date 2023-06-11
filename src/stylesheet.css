@@ -75,37 +75,3 @@ footer {
     height: 80px;
 }
 
-.contact {
-    padding: 25px 0px 25px 0px;
-    height: 100%;
-    width: 75%;    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 25px;
-}
-
-.picture {
-    background-image: url(./chef.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-}
-
-.info {
-    border: #1e40af solid 3px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.info > p {
-    font-size: clamp(1rem, 1.5vw, 2rem);
-}
-
-.info >h1 {
-    font-size: clamp(1rem, 4vw, 3rem);
-}
