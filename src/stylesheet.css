@@ -2,7 +2,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 @font-face {
@@ -22,6 +21,7 @@ header {
     background-color: #93c5fd;
     position: sticky;
     top: 0;
+    z-index: 2; /* Set a higher z-index value */
 }
 
 nav {
@@ -29,7 +29,9 @@ nav {
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    justify-content: space-evenly ;  
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 3; /* Set a higher z-index value */
 }
 
 a {
@@ -42,7 +44,7 @@ a {
     background-color: #3b82f6;
     color: #dbeafe;
     font-size: clamp(1rem, 1.5vw, 2rem);
-    border: solid 1px navy;    
+    border: solid 1px navy;
     border-radius: 10px;
 }
 
@@ -51,17 +53,16 @@ a:hover {
     color: #bfdbfe;
 }
 
-.about-restaurant{
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-template-rows:repeat(2 ,1fr);
-    gap: 5px;
-    padding: 5px 55px 0px 55px;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ecfeff;
 }
 
 .restaurant-name {
-    font-family: Dancing-Font,'Times New Roman', Times, serif ;
+    font-family: Dancing-Font, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,33 +74,77 @@ a:hover {
     height: 80px;
 }
 
-.image1, .image2 {
-    width: 100%;
-    height: 100%;
-    background-image: url(./Restaurant.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
+
+.main-course, .dessert, .drinks {    
+    height: 85vh;
+    width: 75%;
+    border-radius: 7px;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-repeat: repeat;
+    background-size: cover;
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 
-.image2 {
-    background-image: url(./intro-1647440546.jpeg);
+.dessert, .drinks {
+    height: 95vh;
+    width: 75%;
 }
 
-.about, .hours {
+.main-course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background-image: url(./main-course.jpg);
+}
+
+.drinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background-image: url(./drinks.jpeg);
+}
+
+.dessert {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    background-image: url(./desserts.jpg);
+}
+
+.item {
+    backdrop-filter: blur(10px) saturate(75%);
+    border: 3px solid rgb(0, 0, 0);
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0px 20px 0px 20px;
-    background-color: #aebef1a9;
-    border-radius: 10px;
+    color: #15a9ff;
+    font-size: clamp(1rem, 3vw, 2rem);
+    font-weight: 600;
 }
 
-span {
-    font-size: clamp(0.73rem, 1.1vw, 3rem );
+.item > .name {
+    text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.685);
+    background-color: #00000091;
+}
+
+.item > .recepie {
+    color: #232ec4e1;
+    background-color: #dbeafe60;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0);
+    font-size: x-large;    
+}
+
+.item > .price {
+    color: rgb(211, 190, 0);
+    font-size: 2rem;
+    border: 1px solid yellow;
 }
