@@ -2,8 +2,9 @@ import './about.css'
 
 function about() {
     const background = document.querySelector('.content');
+    background.style.display = 'grid'
     background.innerHTML = '';
-    background.style.background = '';
+    background.style.background = 'none';
     let about = document.createElement('div');
     about.className = 'about';
     let header_about = document.createElement('h1');
@@ -17,7 +18,7 @@ function about() {
     image1.className = 'image1';
 
     let image2 = document.createElement('div');
-    image2.className = 'image1';
+    image2.className = 'image2';
 
     let hours = document.createElement('div');
     hours.className = 'hours';
@@ -27,6 +28,8 @@ function about() {
     schedule.innerHTML = "Monday: 5:00 PM - 10:00 PM<br> Tuesday: 5:00 PM - 10:00 PM<br> Wednesday: 5:00 PM - 10:00 PM<br> Thursday: 5:00 PM - 10:00 PM<br> Friday: 5:00 PM - 11:00 PM<br> Saturday: 12:00 PM - 11:00 PM<br> Sunday: 12:00 PM - 10:00 PM<br> <br> Please note that these hours are subject to change, and it's always a good idea to contact the restaurant directly or visit their website for the most up-to-date information.";
     hours.appendChild(header_hours);
     hours.appendChild(schedule);
+    
+    
 
     background.appendChild(about);
     background.appendChild(image1);
