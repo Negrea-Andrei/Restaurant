@@ -1,9 +1,12 @@
-import './home.css'
-
+import about from './about';
+import home from './home';
 const background = document.querySelector('.content');
 
-const text = document.createElement('div');
-text.innerHTML= "Welcome to <br>Odin's seafood restaurant!"
-text.classList.add('welcome');
+home()
 
-background.appendChild(text);
+function test() {
+    about()
+}
+
+let aboutButton = document.querySelector('.about_section');
+aboutButton.addEventListener('click', test)
