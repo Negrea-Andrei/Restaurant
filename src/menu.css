@@ -74,8 +74,7 @@
 }
 
 .item > .price {
-    color: rgb(211, 190, 0);
-    font-size: 2rem;
-    border: 1px solid yellow;
-    font-size: clamp(0.5rem, 1.8vw, 1.5rem); 
+    color: rgb(41, 139, 41);
+    background-color: gold;
+    font-size: clamp(0.5rem, 1.8vw, 3rem); 
 }
