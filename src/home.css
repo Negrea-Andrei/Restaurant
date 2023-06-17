@@ -1,11 +1,11 @@
 .content {
     height: 100%;
-    width: 94.3vw;
+    width: 100%;
     background: url(./images/home.jpeg) center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .welcome {

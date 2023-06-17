@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 5px;
-    padding: 5px 55px 0px 55px;
+    padding: 5px 0px 0px 0px;
 }
 
 .image1,
