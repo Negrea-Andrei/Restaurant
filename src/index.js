@@ -1,5 +1,6 @@
 import about from './about';
 import home from './home';
+import menu from './menu';
 
 home()
 
@@ -8,3 +9,6 @@ aboutButton.addEventListener('click', about);
 
 let homeButton = document.querySelector('.home_section');
 homeButton.addEventListener('click', home);
+
+let menuButton = document.querySelector('.menu_section');
+menuButton.addEventListener('click', menu);

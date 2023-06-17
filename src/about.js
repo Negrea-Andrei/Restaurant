@@ -5,6 +5,7 @@ function about() {
     background.style.display = 'grid'
     background.innerHTML = '';
     background.style.background = 'unset';
+    background.style.height = '100%';
     let about = document.createElement('div');
     about.className = 'about';
     let header_about = document.createElement('h1');
