@@ -1,0 +1,77 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: Dancing-Font;
+    src: url(./Shrikhand-Regular.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecfeff;
+}
+
+header {
+    width: 100%;
+    background-color: #93c5fd;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Set a higher z-index value */
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 3; /* Set a higher z-index value */
+}
+
+button {
+    width: 20%;
+    display: flex;
+    padding: 0% 5% 0% 5%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #3b82f6;
+    color: #dbeafe;
+    font-size: clamp(1rem, 2vw, 2rem);
+    border: solid 1px navy;
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: inset 0px 5px 15px #1e40af;
+    color: #bfdbfe;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ecfeff;
+}
+
+.restaurant-name {
+    font-family: Dancing-Font, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: black;
+    text-shadow: 0px 0px 10px #3b82f6;
+    background-color: #8be2fd8f;
+    width: 100%;
+    height: 80px;
+}
