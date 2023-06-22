@@ -4,7 +4,7 @@ function home() {
     const background = document.querySelector('.content');    
     background.innerHTML = '';
     background.style.display = 'flex';
-    background.style.background = `url(../src/images/home.jpeg) center/cover`;    
+    background.style.background = `url(6eb4940579414f7e5086.jpeg) center/cover`;    
     background.style.height = '100%';
 
     const text = document.createElement('div');
