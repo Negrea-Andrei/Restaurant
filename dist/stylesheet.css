@@ -78,7 +78,7 @@ footer {
 
 .content {
     height: 100%;
-    background: url(6eb4940579414f7e5086.jpeg) center/cover;
+    background: url(../src/images/home.JPEG) center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
